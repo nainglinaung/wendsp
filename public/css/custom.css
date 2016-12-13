@@ -1,0 +1,664 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway/Raleway-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway Black';
+    src: url('../fonts/Raleway/Raleway-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway Bold';
+    src: url('../fonts/Raleway/Raleway-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway ExtraBold';
+    src: url('../fonts/Raleway/Raleway-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway ExtraLight';
+    src: url('../fonts/Raleway/Raleway-ExtraLight.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Raleway Light';
+    src: url('../fonts/Raleway/Raleway-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway Medium';
+    src: url('../fonts/Raleway/Raleway-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway SemiBold';
+    src: url('../fonts/Raleway/Raleway-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway Thin';
+    src: url('../fonts/Raleway/Raleway-Thin.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'TharLon Regular';
+    src: url('../fonts/Tharlon-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Raleway';
+    padding-top: 51px;
+}
+
+.custom-bg-divider {
+    border-bottom: 2px solid rgba(158, 158, 158, 0.55);
+}
+
+.custom-divider {
+    border-bottom: 1px solid rgba(158, 158, 158, 0.55);
+}
+
+.scroll-custom::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #f5f5f5;
+    -webkit-border-radius: 10px;
+}
+
+.scroll-custom::-webkit-scrollbar {
+    width: 6px;
+    background-color: #f5f5f5;
+}
+
+.scroll-custom::-webkit-scrollbar-thumb {
+    background-color: #607D8B;
+    -webkit-border-radius: 10px;
+}
+
+.navbar-inverse {
+    background-color: #2e393e;
+    border-color: #2e393e;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+}
+
+.btn {
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 0;
+}
+
+.text-warning {
+    color: #FF9800;
+}
+
+.text-danger {
+    color: #E91E63;
+}
+
+#dropdown-menu {
+    min-width: 111px;
+}
+
+#dropdown-menu span {
+    left: -4%;
+}
+
+.sidebar {
+    /*display: none;*/
+}
+
+@media screen and (min-width: 768px) {
+    .sidebar {
+        height: 100%;
+        position: fixed;
+        /*z-index: 1000;*/
+        overflow-x: hidden;
+        overflow-y: auto;
+        background-color: #3f51b5;
+    }
+}
+
+.avatar {
+    width: 51px;
+    height: auto;
+    border-radius: 50%;
+    background: white;
+    padding: 1em;
+    margin: 10% 8% 10% 10%;
+}
+
+.avatar span {
+    font-size: 1.4em;
+    color: gray;
+}
+
+#circle-person {
+    display: flex;
+    flex-direction: row;
+}
+
+#person-admin {
+    display: flex;
+    flex-direction: column;
+    margin: 14% 0 0 0;
+    color: #fff;
+}
+
+#person-admin span:first-child {
+    font-family: 'Raleway';
+    font-size: 1.1em;
+}
+
+#person-admin span:last-child {
+    font-family: 'Raleway Light';
+    font-size: .9em;
+    color: #000;
+}
+
+#dashboard {
+    font-family: 'Raleway Light';
+    background-color: rgba(46, 61, 142, 0.3);
+    padding: .4em;
+    color: white;
+    opacity: .8;
+    text-transform: uppercase;
+    font-size: .9em;
+    letter-spacing: .1em;
+    margin-bottom: 10%;
+}
+
+#dashboard span {
+    margin-left: 8%;
+}
+
+#nav-side {
+    font-family: 'Raleway Light';
+}
+
+#nav-side a {
+    color: #fff;
+    padding-left: 20px;
+}
+
+#nav-side a:hover {
+    background-color: rgb(46, 61, 142);
+    color: #FFEB3B;
+}
+
+#nav-side .active {
+    background-color: rgb(46, 61, 142);
+    color: #FFEB3B;
+}
+
+#nav-side a span {
+    margin-right: 8%;
+}
+
+.list-title {
+    font-family: 'Raleway Medium';
+    margin: 3%;
+}
+
+.list-title.pos-list-title {
+    display: flex;
+}
+
+.list-title span {
+    font-size: 1.2em;
+}
+
+.list-title a {
+    float: right;
+}
+
+.list-title > select {
+    width: 190px !important;
+}
+
+#list-title-select {
+    display: flex;
+    position: absolute;
+    right: 4%;
+}
+
+#list-title-select select {
+    width: 70px;
+    margin-top: -.1em;
+}
+
+#list-title-select select:first-child {
+    margin-right: 10%;
+}
+
+.list {
+    margin: 3%;
+}
+
+.list-header {
+    font-family: 'Raleway Bold';
+    margin-bottom: .7%;
+}
+
+.list-pos-header {
+    font-family: 'Raleway Bold';
+    display: flex;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.list-pos-header div {
+    flex-grow: 1;
+}
+
+.list-pos-header div:first-child {
+    flex-grow: 2;
+}
+
+.list-pos-header > div:first-child, .list-pos-header > div:last-child {
+    position: relative;
+    top: 1.25em;
+}
+
+.list-pos-header .custom-divider.pos {
+    margin-bottom: 7px;
+    margin-top: 7px;
+}
+
+.list-pos-header .qty-amt {
+    font-family: 'Raleway Medium';
+    display: flex;
+    text-align: center;
+}
+
+.list-pos-header .qty-amt span:first-child {
+    flex-grow: 1;
+}
+
+.list-pos-header .qty-amt span:last-child {
+    flex-grow: 2;
+}
+
+.list-content {
+    font-family: 'Raleway Medium';
+    font-size: .9em !important;
+    margin-top: 1%;
+}
+
+.list-content.pos-content {
+    margin-bottom: 3%;
+}
+
+.list-content.pos-content:hover .book-action.pos-action > span:first-child {
+    opacity: 1;
+}
+
+.list-content.pos-content:hover .book-action.pos-action > span:last-child {
+    display: none;
+}
+
+.list-content.pos-content > div {
+    float: left;
+    text-align: center;
+}
+
+.list-content.pos-content div:first-child {
+    font-family: 'TharLon Regular', sans-serif !important;
+    font-size: .9em !important;
+    text-align: left;
+    width: 17%;
+}
+.list-content.pos-content div:nth-child(n+2) {
+    width: 13%;
+    position: relative;
+}
+
+.list-content.pos-content div:nth-child(4) {
+    left: 4%;
+}
+
+.list-content.pos-content div:nth-child(5) {
+    left: 5%;
+}
+
+.list-content.pos-content div:nth-child(6) {
+    left: 6%;
+}
+
+.list-content.pos-content div:nth-child(7) {
+    left: 7%;
+}
+
+@media screen and (min-width: 768px) {
+    .list-content.pos-content div:nth-child(3) {
+        left: 2.5%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .list-content.pos-content div:nth-child(2) {
+        left: 2%;
+    }
+
+    .list-content.pos-content div:nth-child(3) {
+        left: 3.5%;
+    }
+}
+
+@media screen and (min-width: 1360px){
+    .list-content.pos-content div:nth-child(3) {
+        position: relative;
+        left: 4%;
+    }
+
+    .list-content.pos-content div:nth-child(4) {
+        left: 5%;
+    }
+
+    .list-content.pos-content div:nth-child(5) {
+        left: 6%;
+    }
+
+    .list-content.pos-content div:nth-child(6) {
+        left: 7%;
+    }
+
+}
+
+.list-content.pos-content div > div {
+    float: left;
+    text-align: center;
+}
+
+.list-content.pos-content div > div:first-child {
+    width: 30%;
+}
+
+.list-content.pos-content div > div:last-child {
+    width: 70%;
+}
+
+.list-content.pos-content > div:last-child {
+    text-align: center;
+}
+
+.custom-divider.pos-divider {
+    margin-top: 5%;
+}
+
+.list-content .row {
+    margin-bottom: 1%;
+}
+
+.list-content .book-action a:last-child {
+    margin-left: 5%;
+}
+
+.book-action.pos-action > span {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.book-action.pos-action > span:first-child {
+    opacity: 0;
+}
+
+.book-action.pos-action > span:last-child {
+    display: block;
+}
+
+.modal-footer .btn {
+    font-size: 14px;
+    border-radius: 3px;
+    font-weight: 400;
+}
+
+.name-detail {
+    display: flex;
+    flex-direction: row;
+}
+
+.team-avatar {
+    width: 47px;
+    height: auto;
+    border-radius: 50%;
+    background-color: rgba(158, 158, 158, 0.65);
+    padding: 1em;
+}
+
+.team-avatar span {
+    font-size: 1.4em;
+    color: #fff;
+}
+
+.team-name {
+    font-family: 'Raleway Medium';
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+
+.team-name.comment {
+    margin-top: 2% !important;
+}
+
+.team-name span:first-child {
+    font-size: 1.2em;
+}
+
+.team-name span:last-child {
+    font-size: .8em;
+    color: #3f51b5;
+}
+
+.list-content .panel-title {
+    font-size: 1em;
+}
+
+.list-content .panel-title a:hover, .panel-title a:focus{
+    text-decoration: none;
+    color: #3F51B5;
+}
+
+.panel-title a> span {
+    margin-right: 5px;
+}
+
+.panel-title-custom span {
+    position: absolute;
+}
+
+.panel-title-custom span:nth-child(1) {
+    left: 27.2%;
+}
+
+.panel-title-custom span:nth-child(2) {
+    left: 59.5%;
+}
+
+.panel-title-custom span:nth-child(3) {
+    left: 75.5%;
+}
+
+.panel-title-custom span:nth-child(4) {
+    left: 91.7%;
+}
+
+.panel-body-custom span {
+    margin-right: 5px;
+}
+
+.panel-body-custom div:nth-child(1) {
+    margin-bottom: 1%;
+}
+
+.comment-text {
+    font-size: .9em !important;
+}
+
+.comment-action {
+    display: flex;
+    margin-top: 3%;
+    font-size: .9em;
+}
+
+.comment-action a {
+    flex-grow: 1;
+    text-align: center;
+    text-decoration: none;
+}
+
+.comment-action a span {
+    margin-right: 5px;
+}
+
+.reply-collapse {
+    margin-top: 4%;
+}
+
+.reply-collapse div:last-child {
+    margin-top: 3%;
+    float: right;
+}
+
+#publish-position {
+    margin: 2%;
+}
+
+#publish-position button {
+    float: right;
+}
+
+#publish-title {
+    margin: 1%;
+}
+
+#publish-title div {
+    margin-bottom: 2%;
+}
+
+#publish-title input[type=text],textarea {
+    border: none;
+    outline: none;
+}
+
+#publish-title div:nth-child(1) input[type=text]{
+    font-family: 'Raleway SemiBold';
+    width: 100%;
+    border-bottom: 2px solid gray;
+    padding: .3em;
+    font-size: 1.5em;
+    letter-spacing: 1.3px;
+}
+
+#publish-title div:nth-child(2) input[type=text] {
+    font-family: 'Raleway Medium';
+    font-weight: bolder;
+    width: 11%;
+    border-bottom: 1px solid gray;
+    text-align: center;
+    float: right;
+}
+
+#publish-title div:nth-child(2) span {
+    font-family: 'Raleway Medium';
+    float: right;
+}
+
+#publish-title div:nth-child(3) {
+    display: flex;
+    margin-top: 12%;
+}
+
+#publish-title div:nth-child(3) span:first-child {
+    font-family: 'Raleway Bold';
+    font-size: 1.25em;
+    flex-grow: 1;
+}
+
+/*#publish-title div:nth-child(3) span:last-child {*/
+    /*flex-grow: 50;*/
+    /*background-color: rgba(158, 158, 158, 0.35);*/
+    /*height: 1.2em;*/
+    /*margin-top: .4em;*/
+/*}*/
+
+#publish-title div:last-child {
+    margin-top: 3%;
+}
+
+#publish-title div:last-child textarea {
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+
+.tag {
+    position: relative;
+    left: 20%;
+    margin-top: 23%;
+}
+
+.tag-frame {
+    font-family: 'Raleway Medium';
+    width: 100%;
+    border: 1px solid rgba(128,128,128,0.3);
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+.tag-frame span:nth-child(1) {
+    font-weight: bolder;
+}
+
+.custom-divider.tag-divider {
+    margin: .5em 0;
+}
+
+.tag-list-frame {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 10em;
+}
+
+.tag-action {
+    margin-top: 1em;
+}
+
+.tag-action input[type=text] {
+    width: 80%;
+    padding: 5px 10px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    color: #555;
+}
+
+.tag-action button {
+    position: relative;
+    top: -1px;
+    height: 32px
+}
+
+#add-float {
+    position: fixed;
+    bottom: 1.5em;
+    right: 1.5em;
+    width: 35px;
+    height: 35px;
+    padding: 7px 0;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+.custom-divider.pos-modal {
+    margin-bottom: 2em;
+}
+

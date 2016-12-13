@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WE Distribution | Order</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">WE Distribution</a>
+        </div>
+        <div class="collapse navbar-collapse" id="mobile">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Moe Kyaw
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" id="dropdown-menu">
+                        <li><a href="#"><span class="glyphicon glyphicon-off"></span>Log Out</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <!--side bar -->
+        <div class="col-sm-3 col-md-2 sidebar">
+            <div class="row" id="circle-person">
+                <div class="avatar">
+                    <span class="glyphicon glyphicon-user"></span>
+                </div>
+                <div id="person-admin">
+                    <span>Mg Mg</span>
+                    <span>admin</span>
+                </div>
+            </div>
+            <div class="row" id="dashboard">
+                <span>dashboard</span>
+            </div>
+            <div class="row" id="nav-side">
+                <ul class="nav">
+                    <li><a href="book.html"><span class="glyphicon glyphicon-book"></span>Book</a></li>
+                    <li><a href="comment.html"><span class="glyphicon glyphicon-comment"></span>Comment</a></li>
+                    <li><a href="order.html" class="active"><span class="glyphicon glyphicon-list-alt"></span>Order List</a></li>
+                    <li><a href="admin.html"><span class="glyphicon glyphicon-user"></span>Admin</a></li>
+                    <li><a href="pos.html"><span class="glyphicon glyphicon-tags"></span>POS</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--main order-->
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <div class="row">
+                <div class="list-title">
+                    <span>Orders List</span>
+                </div>
+                <div class="list">
+                    <!--order list header-->
+                    <div class="row list-header">
+                        <div class="col-sm-3">DELIVER PERSON</div>
+                        <div class="col-sm-4">BOOK NAME</div>
+                        <div class="col-sm-2">ORDER DATE</div>
+                        <div class="col-sm-2">PRICE</div>
+                        <div class="col-sm-1">ACTION</div>
+                    </div>
+                    <div class="custom-bg-divider"></div>   <!--order list header-->
+                    <div class="list-content">
+                        <div class="panel-group" id="accordion">
+                            <!--order list-->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="panel-title">
+                                        <a href="#Order1" data-toggle="collapse" data-parent="#accordion">
+                                            <span class="glyphicon glyphicon-user"></span>ေမာင္ေမာင္စုသည္
+                                        </a>
+                                        <span class="panel-title-custom">
+                                            <span>မင္းေလးေရာေနေကာင္းလား</span>
+                                            <span>October 25, 2016</span>
+                                            <span>3500</span>
+                                            <span class="text-success">Done</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="panel-collapse collapse" id="Order1">
+                                    <div class="panel-body">
+                                        <div class="panel-body-custom">
+                                            <div>
+                                                <span class="glyphicon glyphicon-map-marker"></span>ေမာင္ေမာင္စုသည္ေမာင္ေမာင္စုသည္
+                                            </div>
+                                            <div>
+                                                <span class="glyphicon glyphicon-phone-alt"></span>(09) 3403403
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  <!--order list-->
+                            <!--order list-->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="panel-title">
+                                        <a href="#Order2" data-toggle="collapse" data-parent="#accordion">
+                                            <span class="glyphicon glyphicon-user"></span>ေမာင္ေမာင္စုသည္
+                                        </a>
+                                        <span class="panel-title-custom">
+                                            <span>မင္းေလးေရာေနေကာင္းလား</span>
+                                            <span>October 25, 2016</span>
+                                            <span>3500</span>
+                                            <span class="text-danger">Deliver</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="panel-collapse collapse" id="Order2">
+                                    <div class="panel-body">
+                                        <div class="panel-body-custom">
+                                            <div>
+                                                <span class="glyphicon glyphicon-map-marker"></span>ေမာင္ေမာင္စုသည္ေမာင္ေမာင္စုသည္
+                                            </div>
+                                            <div>
+                                                <span class="glyphicon glyphicon-phone-alt"></span>(09) 3403403
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  <!--order list-->
+                            <!--order list-->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="panel-title">
+                                        <a href="#Order3" data-toggle="collapse" data-parent="#accordion">
+                                            <span class="glyphicon glyphicon-user"></span>ေမာင္ေမာင္စုသည္
+                                        </a>
+                                        <span class="panel-title-custom">
+                                            <span>မင္းေလးေရာေနေကာင္းလား</span>
+                                            <span>October 25, 2016</span>
+                                            <span>3500</span>
+                                            <span class="text-success">Done</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="panel-collapse collapse" id="Order3">
+                                    <div class="panel-body">
+                                        <div class="panel-body-custom">
+                                            <div>
+                                                <span class="glyphicon glyphicon-map-marker"></span>ေမာင္ေမာင္စုသည္ေမာင္ေမာင္စုသည္
+                                            </div>
+                                            <div>
+                                                <span class="glyphicon glyphicon-phone-alt"></span>(09) 3403403
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  <!--order list-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

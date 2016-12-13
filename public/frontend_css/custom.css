@@ -1,0 +1,818 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway/Raleway-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway Bold';
+    src: url('../fonts/Raleway/Raleway-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway Medium';
+    src: url('../fonts/Raleway/Raleway-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway SemiBold';
+    src: url('../fonts/Raleway/Raleway-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Antipasto Regular';
+    src: url('../fonts/Antipasto/antipasto.regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Tharlon Regular';
+    src: url('../fonts/Tharlon-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Raleway';
+    height: 100%;
+    margin: 0;
+}
+
+
+.content {
+    min-height: 100%;
+}
+
+.content.detail {
+    margin-bottom: 2.5%;
+}
+
+.footer {
+    background-color: #181818;
+    color: white;
+    padding: 20px 0 0 0;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #E91E63;
+}
+
+.footer ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: flex;
+}
+
+#footer-custom {
+    justify-content: space-around;
+}
+
+.footer-title {
+    font-family: 'Raleway Medium';
+    text-transform: uppercase;
+}
+
+.footer-sub-title p {
+    margin: 0 0 5px;
+}
+
+.footer-divider {
+    padding: 15px 3%;
+}
+
+#footer-last {
+    padding: 0 3%;
+}
+
+#footer-last li {
+    padding: 10px 10px 20px 0;
+    font-size: .9em;
+}
+
+.custom-bg-divider {
+    border-bottom: 2px solid rgba(158, 158, 158, 0.55);
+}
+
+.custom-divider {
+    border-bottom: 1px solid rgba(158, 158, 158, 0.55);
+    /*height: 1px;*/
+    /*overflow: hidden;*/
+    /*background-color:rgba(158, 158, 158, 0.55);*/
+}
+
+.custom-vertical {
+    border-left: 1px solid gray;
+    height: 100vh;
+    position: absolute;
+}
+
+.scroll-custom::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #f5f5f5;
+    -webkit-border-radius: 10px;
+}
+
+.scroll-custom::-webkit-scrollbar {
+    width: 6px;
+    background-color: #f5f5f5;
+}
+
+.scroll-custom::-webkit-scrollbar-thumb {
+    background-color: #607D8B;
+    -webkit-border-radius: 10px;
+}
+
+.glyphicon-star {
+    color: #FF9800;
+}
+
+.btn {
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 0;
+}
+
+.text-warning {
+    color: #FF9800;
+}
+
+.text-danger {
+    color: #E91E63;
+}
+
+#dropdown-menu {
+    min-width: 111px;
+}
+
+#dropdown-menu span {
+    left: -4%;
+}
+
+.carousel-caption {
+    font-family: 'Tharlon Regular';
+}
+
+.rating-input i {
+    margin-right: .2em;
+}
+
+.carousel-control-custom {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #9E9E9E;
+    padding: 6px 0;
+    line-height: 1.428571429;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.carousel-control-custom.left {
+    left: -5%;
+}
+
+.carousel-control-custom.right {
+    right: -4%;
+}
+
+a.carousel-control-custom {
+    color: white;
+}
+
+a:hover.carousel-control-custom {
+    color: #000;
+}
+
+ul#customer-service {
+    font-family: 'Raleway';
+    position: fixed;
+    top: 0;
+    z-index: 1003;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #181818;
+}
+
+#customer-service li {
+    float: right;
+}
+
+#customer-service li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: .6em;
+    text-decoration: none;
+    font-size: .8em;
+}
+
+#customer-service li:nth-child(2) span {
+    position: relative;
+    top: .3em;
+    border-right: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+#nav-custom {
+    top: 28px;
+    border: none;
+    border-radius: 0;
+    background-color: #2196F3;
+    min-height: 70px;
+}
+
+#nav-custom .navbar-brand img {
+    margin-top: -3px;
+}
+
+#nav-custom ul {
+    margin: 12px -10px 7px -15px;
+}
+
+#nav-custom .navbar-nav>li>a {
+    color: white;
+}
+
+#nav-custom .navbar-nav>li>a:hover, #nav-custom .navbar-nav>li>a:active {
+    color: #ffeb3b;
+}
+
+#latest-slide {
+    margin-top: 7%;
+}
+
+#latest-slide .carousel-inner img {
+    width: 100%;
+    height: 386px;
+}
+
+#latest-slide .carousel-inner a {
+    text-decoration: none;
+    color: white;
+}
+
+#latest-slide .carousel-inner a:hover {
+    text-decoration: underline;
+}
+
+#top-10-month-rect {
+    background-color: black;
+    margin-top: 14.5%;
+    padding: 1em;
+    color: #ffffff;
+}
+
+#top-10-month-title {
+    position: relative;
+    left: -2em;
+    width: 130px;
+    font-family: 'Raleway Medium';
+    font-size: .9em;
+    background-color: #ff1c27;
+    text-transform: uppercase;
+    padding: .6em;
+    text-align: center;
+}
+
+#top-10-preview {
+    display: flex;
+    padding: 1em 1em 1em 0;
+}
+
+#top-10-img-preview img {
+    width: 105px;
+    height: 144px;
+}
+
+#top-10-book-detail {
+    padding: 1em;
+}
+
+#top-10-book-detail .glyphicon-star-empty {
+    color: white !important;
+}
+
+#top-10-book-detail div {
+    font-family: 'Tharlon Regular' !important;
+    margin-bottom: .7em;
+}
+
+#top-10-book-detail div:nth-child(1) {
+    font-size: .9em;
+}
+
+#top-10-book-detail div:nth-child(2) {
+    font-size: .8em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#top-10-book-detail div:nth-child(3) {
+    margin-top: 1.5em;
+    margin-bottom: -.2em;
+}
+
+#top-10-book-detail div:nth-child(3) .glyphicon-star {
+    color: #FFEB3B;
+}
+
+#top-10-book-detail div:last-child {
+    font-family: 'Raleway Medium' !important;
+    color: #E91E63;
+}
+
+#top-10-book-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+#top-10-book-list img {
+    width: 100px;
+    height: 140px;
+}
+
+#latest-best-slide-thumbnail {
+    margin-top: 3.5%;
+    padding: 0 1em 0 1em;
+    margin-bottom: 1%;
+}
+
+#latest-book-thumb {
+    margin-left: 1em;
+}
+
+.best-latest-slide {
+    margin-top: 1.5%;
+}
+
+.best-latest-slide img {
+    width: 140px;
+    height: 205px;
+}
+
+.best-latest-slide .col-sm-2 {
+    margin-bottom: 1em;
+}
+
+.best-latest-slide .item {
+    margin-top: 2%;
+}
+
+.thumbnail-detail {
+    position: relative;
+    top: 1em;
+    /*left: -1em;*/
+}
+
+.thumbnail-detail a {
+    font-family: 'Tharlon Regular' !important;
+    color: #000;
+    text-decoration: none;
+}
+
+.thumbnail-detail div:first-child a {
+    font-size: 1.1em;
+    font-weight: bolder;
+}
+
+.thumbnail-detail div:nth-child(2) {
+    margin-top: .2em;
+    margin-bottom: 1em;
+}
+
+.thumbnail-detail div:nth-child(2) a {
+    font-size: .8em;
+    color: #9E9E9E;
+}
+
+.thumbnail-detail > div:nth-child(4) {
+    font-family: 'Antipasto Regular';
+    font-size: 1.5em;
+    color: #E91E63;
+    margin-top: .2em;
+}
+
+.thumbnail-detail > div:nth-child(4) a {
+    position: relative;
+    left: .5em;
+    color: gray;
+    opacity: 0;
+}
+
+.separate-stand > div:hover .thumbnail-detail > div:nth-child(4) a {
+    opacity: 1;
+}
+
+#browse-separate {
+    margin-top: 3%;
+}
+
+#browse-book-title {
+    font-family: 'Raleway Bold';
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+.browse-book-sub-title > div:first-child {
+    font-family: 'Raleway Bold';
+    text-transform: capitalize;
+    margin: 1em 0;
+}
+
+.browse-book-sub-title div > a  {
+    font-family: 'Raleway Medium';
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    padding: 2px 0;
+}
+
+.browse-book-sub-title div > a:hover {
+    text-decoration: none;
+    color: #E91E63;
+}
+
+#separate-category {
+    border-left: 1px solid #ededed;
+}
+
+#separate-category > div:nth-child(n+2) {
+    margin-top: 7%;
+}
+
+#separate-category > div:last-child {
+    margin-bottom: 4%;
+}
+
+.separate-cat-title {
+    font-family: 'Raleway Medium';
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.separate-cat-title div:first-child {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.separate-cat-title div a {
+    position: absolute;
+    right: 1.3em;
+    padding: 3px 5px;
+    border-radius: 3px;
+    border-color: #333;
+}
+
+.separate-stand {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+.separate-stand img {
+    width: 120px;
+    height: 175px;
+}
+
+.separate-stand .thumbnail-detail div:first-child span:first-child {
+    font-size: 1.1em;
+}
+
+.separate-stand .thumbnail-detail div:nth-child(2) {
+    margin-bottom: .9em;
+}
+
+/*book detail */
+
+.book-detail {
+    border-right: 1px solid #eeeeee;
+    margin-top: 5%;
+    padding-right: 3em;
+}
+
+#book-detail-thumbnail {
+    display: flex;
+}
+
+#book-detail-thumbnail > div:first-child img {
+    width: 280px;
+    height: 430px;
+}
+
+#book-detail-thumbnail > div:last-child {
+    /*margin: 1.4em 0 0 0;*/
+}
+
+#book-detail-thumbnail > div:last-child p {
+    font-family: 'TharLon' !important;
+    line-height: 1.5em;
+}
+
+#book-detail-thumbnail > div:last-child p:first-child {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+#book-detail-thumbnail > div:last-child p:nth-child(2) {
+    font-size: 1.2em;
+    color: #9c9c9c;
+}
+
+#book-detail-thumbnail > div:last-child p:nth-child(3) {
+    font-size: 1.5em;
+}
+
+#book-detail-thumbnail > div:last-child p:nth-child(4) {
+    font-family: 'Antipasto Regular' !important;
+    font-size: 3.3em;
+    color: #E91E63;
+}
+
+#book-detail-thumbnail > div:last-child ul {
+    font-family: 'Raleway Medium';
+    font-size: 1.1em;
+    line-height: 1.8em;
+    padding-left: 1em;
+    margin: 2.5em 0;
+}
+
+#book-detail-thumbnail > div:last-child ul a {
+    font-family: 'TharLon' !important;
+    color: #000;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+#book-detail-thumbnail .btn-default {
+    background-color: #9b9b9b;
+    color: #ffffff;
+    border-color: transparent;
+}
+
+#book-detail-thumbnail input[type=number] {
+    position: relative;
+    top: .15em;
+    width: 3em;
+    height: 29px;
+    outline: none;
+    border: none;
+    background-color: #9b9b9b;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#book-detail-thumbnail input[type=number]::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+#book-detail-thumbnail > div:last-child > div > a:last-child {
+    margin-left: 2em;
+}
+
+.ads {
+    margin-top: 5%;
+    padding: 0 2em 0 3em;
+}
+
+
+.ads .ads-book-detail {
+    font-size: 4em;
+    background-color: #9E9E9E;
+    color: #fff;
+    height: 200px;
+    text-align: center;
+}
+
+.ads > div:nth-child(2) {
+    font-family: 'Raleway Bold';
+    font-size: 1.2em;
+    margin-top: 1.5em;
+    margin-bottom: .6em;
+
+}
+
+.same-author-book {
+    display: flex;
+    margin-top: 2.7em;
+}
+
+.same-author-book-img img {
+    width: 110px;
+    height: 177px;
+}
+
+.thumbnail-detail.same-author-book-detail {
+    top: 0;
+    margin-left: 1em;
+}
+
+.same-author-book-detail div:nth-child(2) {
+    margin-top: .5em;
+}
+
+.same-author-book-detail div:last-child {
+    font-size: 1.7em;
+    margin-top: .5em;
+}
+
+
+#book-detail-description {
+    padding-left: 15px;
+}
+
+.book-detail-subtitle {
+    display: flex;
+    margin-top: 7%;
+}
+
+.row.review, .row.related-book {
+    padding: 0 2em;
+}
+
+.book-detail-subtitle.review {
+    margin: 2% 0;
+}
+
+.book-detail-subtitle div:first-child {
+    font-family: 'Raleway Bold';
+    font-size: 1.2em;
+    white-space: nowrap;
+}
+
+.book-detail-subtitle div:last-child {
+    background-color: #e9e9e9;
+    width: 100%;
+    height: 1.5em;
+    margin-left: 1em;
+}
+
+#book-detail-description p, .reviewed-comment > div:last-child {
+    font-family: 'Tharlon Regular' !important;
+    font-size: .9em;
+    letter-spacing: .5px;
+    line-height: 2em;
+}
+
+#book-detail-description p {
+    text-align: justify;
+    text-indent: 4em;
+    margin-top: 2em;
+}
+
+#review-section {
+    position: relative;
+}
+
+#review-section .col-md-9 {
+    border-left: 1px solid #eeeeee;
+}
+
+#review-section nav {
+    display: flex;
+    justify-content: center;
+
+}
+
+.reviewed-comment:nth-child(n+2) {
+    border-top: 1px solid #eeeeee;
+}
+
+.reviewed-comment > div:last-child {
+    margin: 1.3em 0 1.5em 0;
+}
+
+.reviewed-comment > div:first-child {
+    display: flex;
+    margin-top: 1.5em;
+    font-size: .8em;
+}
+
+.reviewed-comment > div:first-child > div:first-child {
+    position: relative;
+    top: -3px;
+    color: white;
+    margin-right: .7em;
+    background-color: rgba(158,158,158,0.6);
+    border-radius: 15px;
+    padding: 3.5px 5.2px;
+    font-size: .7em;
+}
+
+.reviewed-comment > div:first-child > div:nth-child(2) {
+    font-family: 'Tharlon Regular' !important;
+    font-size: .9em !important;
+    margin-right: 1em;
+}
+
+.reviewed-comment > div:first-child > div:nth-child(4) a {
+    color: #E91E63;
+    text-decoration: underline;
+}
+
+.reviewed-comment > div:first-child > div:nth-child(4) {
+    position: absolute;
+    right: 1.5em;
+}
+
+#rating-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rating-review {
+    text-align: center;
+    margin-top: 1em;
+}
+
+#rating-review > div {
+    position: relative;
+}
+
+#rating-review > div:nth-child(2) {
+    font-family: 'Antipasto Regular';
+    font-size: 8em;
+    color: #E91E63;
+    top: -.35em;
+}
+
+#rating-review > div:nth-child(3) {
+    font-size: 1.45em;
+    top: -3.3em;
+}
+
+#rating-review .rating-input i {
+    color: gray;
+}
+
+#rating-review > div:nth-child(4) {
+    top: -4em;
+}
+
+#write-review label.col-sm-2 {
+    white-space: nowrap;
+}
+
+#write-review .form-control {
+    border-radius: 0;
+}
+
+#write-review h4.modal-title {
+    font-family: 'Raleway Bold';
+    color: #E91E63;
+}
+
+#browse-title {
+    margin-top: 5%;
+}
+
+#browse-title > div:first-child {
+    font-family: 'Raleway Bold';
+    font-size: 1.3em;
+}
+
+#browse-title > div:nth-child(2) > span:first-child {
+    color: #9E9E9E;
+}
+
+#browse-title > div:nth-child(2) > span:last-child {
+    float: right;
+    margin-top: -.5em;
+}
+
+#browse-ads {
+    background-color: #9E9E9E;
+    color: #fff;
+    height: 11em;
+    line-height: 11em;
+    text-align: center;
+    margin: 2em 0 2em 0;
+}
+
+#browse-list {
+    border-left: 1px solid #e3e3e3;
+}
+
+#browse-list > div:first-child {
+    /*margin-top: 1em;*/
+}
+
+#browse-list > div:nth-child(n+2) {
+    margin-top: 4em;
+}
+
+#browse-list > nav {
+    text-align: center;
+    margin: 2em 0 -1.5em 0;
+}
+
+.footer.browse {
+    margin-top: 2.5em;
+}

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WE Distribution | POS</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+<!--navigation-->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">WE Distribution</a>
+        </div>
+        <div class="collapse navbar-collapse" id="mobile">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Moe Kyaw
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" id="dropdown-menu">
+                        <li><a href="#"><span class="glyphicon glyphicon-off"></span>Log Out</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav><!--end navigation-->
+
+<div class="container-fluid">
+    <div class="row">
+        <!--side bar-->
+        <div class="col-sm-3 col-md-2 sidebar">
+            <div class="row" id="circle-person">
+                <div class="avatar">
+                    <span class="glyphicon glyphicon-user"></span>
+                </div>
+                <div id="person-admin">
+                    <span>Mg Mg</span>
+                    <span>admin</span>
+                </div>
+            </div>
+            <div class="row" id="dashboard">
+                <span>dashboard</span>
+            </div>
+            <div class="row" id="nav-side">
+                <!--side bar content-->
+                <ul class="nav">
+                    <li><a href="book.html"><span class="glyphicon glyphicon-book"></span>Book</a></li>
+                    <li><a href="comment.html"><span class="glyphicon glyphicon-comment"></span>Comment</a></li>
+                    <li><a href="order.html"><span class="glyphicon glyphicon-list-alt"></span>Order List</a></li>
+                    <li><a href="admin.html"><span class="glyphicon glyphicon-user"></span>Admin</a></li>
+                    <li><a href="pos.html" class="active"><span class="glyphicon glyphicon-tags"></span>POS</a></li>
+                </ul><!--end side bar content-->
+            </div>
+        </div><!--side bar-->
+        <!--main-->
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <div class="row">
+                <!--pos title-->
+                <div class="list-title pos-list-title">
+                    <!--publisher-->
+                    <select name="publisher-list" id="publisher-list" class="form-control input-sm">
+                        <option value="0" disabled>Publishers</option>
+                        <option value="1">စိတ်ကူးကူးချိုချို အနုပညာ (၁)</option>
+                        <option value="2">စိတ်ကူးကူးချိုချို အနုပညာ (၂)</option>
+                    </select><!--end publisher-->
+                    <div id="list-title-select">
+                        <!--Month-->
+                        <select name="month" id="month" class="form-control input-sm">
+                            <option value="0" disabled>Month</option>
+                            <option value="1">JAN</option>
+                            <option value="2">FEB</option>
+                            <option value="3">MAR</option>
+                            <option value="4">APR</option>
+                            <option value="5">MAY</option>
+                            <option value="6">JUN</option>
+                            <option value="7">JUL</option>
+                            <option value="8">AUG</option>
+                            <option value="9">SEPT</option>
+                            <option value="10">OCT</option>
+                            <option value="11">NOV</option>
+                            <option value="12">DEC</option>
+                        </select><!-- end Month-->
+                        <!--Year-->
+                        <select name="year" id="year" class="form-control input-sm">
+                            <option value="0" disabled>Year</option>
+                            <option value="1">2015</option>
+                            <option value="2">2016</option>
+                            <option value="3">2017</option>
+                        </select><!--end Year-->
+                    </div>
+                </div>
+                <div class="list">
+                    <!--pos header-->
+                    <div class="row list-pos-header">
+                        <div>DES</div>
+                        <div>
+                            <span>OPENING</span>
+                            <div class="custom-divider pos"></div>
+                            <div class="qty-amt">
+                                <span>Qty</span>
+
+                                <span>Amt</span>
+                            </div>
+                        </div>
+                        <div>
+                            <span>RECEIVE</span>
+                            <div class="custom-divider pos"></div>
+                            <div class="qty-amt">
+                                <span>Qty</span>
+                                <span>Amt</span>
+                            </div>
+                        </div>
+                        <div>
+                            <span>SALES</span>
+                            <div class="custom-divider pos"></div>
+                            <div class="qty-amt">
+                                <span>Qty</span>
+                                <span>Amt</span>
+                            </div>
+                        </div>
+                        <div>
+                            <span>RETURN</span>
+                            <div class="custom-divider pos"></div>
+                            <div class="qty-amt">
+                                <span>Qty</span>
+                                <span>Amt</span>
+                            </div>
+                        </div>
+                        <div>
+                            <span>CLOSING</span>
+                            <div class="custom-divider pos"></div>
+                            <div class="qty-amt">
+                                <span>Qty</span>
+                                <span>Amt</span>
+                            </div>
+                        </div>
+                        <div>COMM</div>
+                    </div><!--end pos header-->
+                    <div class="custom-bg-divider"></div><!--end pos title-->
+                    <!--pos content-->
+                    <div class="list-content pos-content">
+                        <div>မြန်မာကဗျာလက်ရွေးစင်များမြန်မာကဗျာလက်ရွေးစင်များ</div>
+                        <div>
+                            <div>11</div>
+                            <div>344444</div>
+                        </div>
+                        <div>
+                            <div>100</div>
+                            <div>200</div>
+                        </div>
+                        <div>
+                            <div>100</div>
+                            <div>200</div>
+                        </div>
+                        <div>
+                            <div>100</div>
+                            <div>200</div>
+                        </div>
+                        <div>
+                            <div>100</div>
+                            <div>2003333</div>
+                        </div>
+                        <div class="book-action pos-action">
+                            <span>
+                                <a href="#add-publisher-book" data-toggle="modal"><span class="glyphicon glyphicon-pencil text-warning"></span></a>
+                                <a href="#"><span class="glyphicon glyphicon-trash text-danger"></span></a>
+                            </span>
+                            <span>something</span>
+                        </div>
+                    </div>
+                    <div class="custom-divider pos-divider"></div><!--end pos content-->
+                    <!--pos content-->
+                    <div class="list-content pos-content">
+                        <div>မြန်မာကဗျာလက်ရွေးစင်များမြန်မာကဗျာလက်ရွေးစင်များ</div>
+                        <div>
+                            <div>11</div>
+                            <div>344444</div>
+                        </div>
+                        <div>
+                            <div>100</div>
+                            <div>200</div>
+                        </div>
+                        <div>
+                            <div>100</div>
+                            <div>200</div>
+                        </div>
+                        <div>
+                            <div>100</div>
+                            <div>200</div>
+                        </div>
+                        <div>
+                            <div>100</div>
+                            <div>2003333</div>
+                        </div>
+                        <div class="book-action pos-action">
+                            <span>
+                                <a href="#add-publisher-book" data-toggle="modal"><span class="glyphicon glyphicon-pencil text-warning"></span></a>
+                                <a href="#"><span class="glyphicon glyphicon-trash text-danger"></span></a>
+                            </span>
+                            <span>something</span>
+                        </div>
+                    </div>
+                    <div class="custom-divider pos-divider"></div><!--end pos content-->
+                </div>
+            </div>
+            <!--add book float btn trigger modal-->
+            <a href="" class="btn btn-info" id="add-float" data-toggle="modal" data-target="#add-publisher-book">
+                <span class="glyphicon glyphicon-plus"></span>
+            </a>
+            <!--modal-->
+            <div class="modal fade" id="add-publisher-book" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!--modal header-->
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                            <h4 class="modal-title">Add Publisher's Book</h4>
+                        </div><!--end modal header-->
+                        <!--modal body-->
+                        <div class="modal-body">
+                            <form action="">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="des" placeholder="Des">
+                                </div>
+                                <div class="form-group">
+                                    <label for="opening-qty">OPENING</label>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <input type="number" class="form-control" id="opening-qty" placeholder="Qty">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="number" class="form-control" id="opening-amt" placeholder="Amt">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="receive-qty">RECEIVE</label>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <input type="number" class="form-control" id="receive-qty" placeholder="Qty">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="number" class="form-control" id="receive-amt" placeholder="Amt">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="sales-qty">SALES</label>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <input type="number" class="form-control" id="sales-qty" placeholder="Qty">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="number" class="form-control" id="sales-amt" placeholder="Amt">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="return-qty">RETURN</label>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <input type="number" class="form-control" id="return-qty" placeholder="Qty">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="number" class="form-control" id="return-amt" placeholder="Amt">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="closing-qty">CLOSING</label>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <input type="number" class="form-control" id="closing-qty" placeholder="Qty">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="number" class="form-control" id="closing-amt" placeholder="Amt">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="comm" placeholder="Comm">
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-11">
+                                        <button type="button" class="btn btn-info">ADD</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div><!--end modal body-->
+                    </div>
+                </div>
+            </div><!--end modal-->
+        </div><!--end main-->
+
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+
